@@ -15,12 +15,14 @@ def region_of_interest(image):
     ])
     mask = np.zeros_like(image)
     cv2.fillPoly(mask, polygons, 255)
-    return mask
+    masked_image = cv2.bitwise_and(image, mask)
+
+    return masked_image
 
 image = cv2.imread('test_image.jpg')
 lane_image = np.copy(image)
 canny = canny(lane_image)
+croped_image = region_of_interest(canny)
 
-
-cv2.imshow('result', region_of_interest(canny))
+cv2.imshow('result', croped_image)
 cv2.waitKey(0)
