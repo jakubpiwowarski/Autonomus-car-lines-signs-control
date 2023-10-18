@@ -16,7 +16,7 @@ def average_slope_intercept(image, lines):
     right_fit = []
     for line in lines:
         x1, y1, x2, y2 = line.reshape(4)
-        parameters = np.polyfit((x1,x2), (y1,y2), 1) #obliczeie konta nachylenia
+        parameters = np.polyfit((x1,x2), (y1,y2), 1)
         slope = parameters[0]
         intercept = parameters[1]
         if intercept > 0:
