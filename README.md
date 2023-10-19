@@ -8,7 +8,7 @@ This repository contains a set of projects related to Advanced Driver Assistance
 
 1. **Road Line Detection**: This project focuses on identifying and tracking road lines on the road. Image processing algorithms and machine learning techniques are used to detect both double and single road lines on the road. The results of this project can be utilized in systems that keep the vehicle within the lane.
 
-2. **Object Classification (Road Signs) Using CNN**: This project centers on object classification on the road, particularly road signs. It employs Convolutional Neural Networks (CNN) to identify various signs, such as speed limit signs, stop signs, warning signs, and more. This is crucial for alerting the driver to road conditions.
+2. **Object Classification (Road Signs) Using CNN**: This project centers on object classification on the road, particularly road signs. It employs Convolutional Neural Networks (CNN) to identify various signs, such as speed limit signs, stop signs, warning signs, and more. This is crucial for alerting the driver to road conditions. Used this data set: https://bitbucket.org/jadslim/german-traffic-signs/src
 
 3. **End-to-End Behavioral Cloning**: This project focuses on cloning driver behaviors in an ADAS environment. It employs an end-to-end approach, meaning machine learning involves both regression, which predicts the vehicle's motion, and classification, which determines what actions to take in a given road scenario. This is a key component of driver assistance systems that react to surrounding traffic.
 
